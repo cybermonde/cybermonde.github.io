@@ -8,6 +8,9 @@ $(document).ready(function($) {
 	}
 	
 	get_repos();
+	get_gists();
+
+
 
 	$(window).resize(function() {
 		place_divs(  );
@@ -46,6 +49,18 @@ function get_repos(){
 		
 		place_divs(  );
 
+	});
+}
+
+function get_gists(){
+    $.getJSON('https://api.github.com/users/'+owner+'/gists', function( gists ){
+			
+		var $item = $('<select id="selectgists" onchange="window.location = $(\'#selectgists option:selected\').val();"><option value="">Gists :</option>');
+		$.each(gists, function (i, gists) {
+			$item.append('<option value="' + gists.html_url + '">' + (i+1) + ' : ' + gists.description + '</option>');
+			$item.appendTo('#gistslist');
+		});
+		
 	});
 }
 

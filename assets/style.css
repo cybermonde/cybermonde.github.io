@@ -23,6 +23,19 @@ body {
 	text-align:center;
 }
 
+#gistslist {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	padding:3px 10px;
+}
+
+select {
+	background: #FFFFFF;
+	font-family: 'Molengo', sans-serif;
+	border:2px solid #BF1111;
+}
+
 #center {
 }
 
@@ -138,7 +151,6 @@ a {
 	padding:3px 10px;
 	background:#fff;
 	opacity:0.5;
-	border-top-left-radius:10px;
 }
 
 #footer code {
