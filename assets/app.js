@@ -45,7 +45,7 @@ function get_repos(){
 			
 		});
 		
-		$('#gravatar_img').attr( 'src', 'https://secure.gravatar.com/avatar/'+repos[0].owner.gravatar_id+'?s=512' ).show();
+		$('#gravatar_img').attr( 'src', 'http://www.gravatar.com/avatar/123a52ed77784bcc210d8db559223e99?s=512' ).show();
 		
 		place_divs(  );
 
